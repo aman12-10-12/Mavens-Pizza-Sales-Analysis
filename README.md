@@ -53,11 +53,29 @@ The SQL analysis answers business questions related to customer behaviour, reven
 
 The analysis also identifies popular ingredients, peak business days, peak order hours, and best-selling pizza varieties.
 
+## Dashboard
+
+The interactive Excel dashboard presents the main sales KPIs and business insights, including:
+
+- Total revenue
+- Total orders
+- Total pizzas sold
+- Average order value
+- Peak order hours and days
+- Monthly revenue trends
+- Pizza category performance
+- Popular pizza sizes and ingredients
+- Best-selling pizzas
+
+The completed dashboard is available in:
+
+`Maven Pizza Sales Insight Dashboard.xlsx`
+
 ## Project status
 
 - [x] Project setup
 - [x] Dataset documentation
 - [x] SQL analysis
 - [x] Excel dashboard metrics
-- [ ] Interactive dashboard
+- [x] Interactive dashboard
 - [ ] Presentation

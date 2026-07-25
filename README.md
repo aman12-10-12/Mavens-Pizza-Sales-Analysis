@@ -24,6 +24,14 @@ The project uses the Pizza Place Sales dataset, which contains order, order-deta
 | `pizza_types.csv` | Pizza names, categories, and ingredients |
 | `data_dictionary.csv` | Description of the dataset fields |
 
+## Initial insights
+
+- The restaurant serves approximately **60 customers per day**.
+- Customers order an average of **2.32 pizzas per order**.
+- The Thai Chicken Pizza, Barbecue Chicken Pizza, and California Chicken Pizza are the leading pizzas by revenue.
+- **12 p.m.** is the busiest hour for orders.
+- **Friday, Thursday, and Saturday** are the peak ordering days.
+
 ## Project status
 
 - [x] Project setup

@@ -57,7 +57,7 @@ The analysis also identifies popular ingredients, peak business days, peak order
 
 - [x] Project setup
 - [x] Dataset documentation
-- [ ] SQL analysis
-- [ ] Excel dashboard metrics
+- [x] SQL analysis
+- [x] Excel dashboard metrics
 - [ ] Interactive dashboard
 - [ ] Presentation

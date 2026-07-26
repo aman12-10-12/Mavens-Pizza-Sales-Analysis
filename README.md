@@ -1,28 +1,64 @@
-# Maven Pizza Sales Analysis
+# Maven's Pizza Sales Insights
 
-An end to end pizza sales analysis project using SQL and Microsoft Excel.
+![Pizza Sales Analysis Banner](assets/pizza-sales-banner.png)
 
-## Project objective
+## Table of Contents
 
-Analyse pizza sales data to understand customer ordering behaviour, sales performance, popular products, and peak business periods.
+- [Project Background](#project-background)
+- [Project Objective](#project-objective)
+- [Tools Used](#tools-used)
+- [Data Structure](#data-structure)
+- [Analysis Workflow](#analysis-workflow)
+- [Key Findings](#key-findings)
+- [Dashboard](#dashboard)
+- [Recommendations](#recommendations)
+- [Repository Structure](#repository-structure)
+- [Project Resources](#project-resources)
 
-## Tools used
+## Project Background
 
-- SQL Server
-- SQL
-- Microsoft Excel
+This project analyses a full year of sales data from a fictional pizza restaurant. The purpose of the analysis is to transform raw transaction data into meaningful business insights that can support menu strategy, staffing, inventory planning, and promotional decisions.
 
-## Dataset
+The analysis examines product performance, customer ordering patterns, pizza-size and category preferences, popular ingredients, peak business periods, and monthly sales trends. SQL was used to query and analyse the data, while Microsoft Excel was used to build an interactive dashboard that communicates the findings clearly.
 
-The project uses the Pizza Place Sales dataset, which contains order, order-detail, pizza, and pizza-type information.
+The dataset contains 48,620 order-detail records and represents 21,350 customer orders. Across the year, the restaurant sold 49,574 pizzas and generated approximately $817.86K in revenue.
 
-| File | Description |
+## Project Objective
+
+The project answers the following business questions:
+
+- Which pizzas generate the highest and lowest revenue?
+- Which pizza categories and sizes are most popular?
+- Which ingredients appear most frequently in customer orders?
+- What are the busiest hours and days of the week?
+- Which month generates the highest revenue and sales volume?
+- How can the restaurant use these insights to improve sales and operations?
+
+## Tools Used
+
+- **SQL Server** — storing and querying pizza sales data.
+- **SQL** — joining tables, calculating KPIs, and answering business questions.
+- **Microsoft Excel** — creating KPI cards, charts, pivot tables, and the interactive sales dashboard.
+
+## Data Structure
+
+The dataset is made up of four connected tables. The `order_details` table links customer orders to individual pizza items, while the `pizzas` and `pizza_types` tables provide details about each pizza’s size, price, category, and ingredients.
+
+![Pizza Sales Entity Relationship Diagram](assets/pizza-er-diagram.png)
+
+| Table | Description |
 |---|---|
-| `orders.csv` | Order IDs, order dates, and order times |
-| `order_details.csv` | Individual pizza items and quantities within each order |
-| `pizzas.csv` | Pizza IDs, sizes, and prices |
-| `pizza_types.csv` | Pizza names, categories, and ingredients |
-| `data_dictionary.csv` | Description of the dataset fields |
+| `order_details` | Line item details for every order, including `order_details_id`, `order_id`, `pizza_id`, and quantity. |
+| `orders` | Order level information, including `order_id`, order date, and order time. |
+| `pizzas` | Pizza variants, including `pizza_id`, `pizza_type_id`, size, and price. |
+| `pizza_types` | Pizza names, categories, and ingredient lists. |
+
+### Table Relationships
+
+- One order can contain multiple order-detail records.
+- Each order-detail record refers to one pizza variant.
+- Each pizza variant belongs to one pizza type.
+- Pizza types contain the product name, category, and ingredients used in the pizza.
 
 ## Initial insights
 

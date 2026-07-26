@@ -71,6 +71,12 @@ The completed dashboard is available in:
 
 `Maven Pizza Sales Insight Dashboard.xlsx`
 
+## Presentation
+
+A summary presentation of the project findings is available in:
+
+`Maven_s_Pizza_Sales_Insight.pptx`
+
 ## Project status
 
 - [x] Project setup
@@ -78,4 +84,4 @@ The completed dashboard is available in:
 - [x] SQL analysis
 - [x] Excel dashboard metrics
 - [x] Interactive dashboard
-- [ ] Presentation
+- [x] Presentation

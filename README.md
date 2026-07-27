@@ -60,54 +60,80 @@ The dataset is made up of four connected tables. The `order_details` table links
 - Each pizza variant belongs to one pizza type.
 - Pizza types contain the product name, category, and ingredients used in the pizza.
 
-## Initial insights
+## Analysis Workflow
 
-- The restaurant serves approximately **60 customers per day**.
-- Customers order an average of **2.32 pizzas per order**.
-- The Thai Chicken Pizza, Barbecue Chicken Pizza, and California Chicken Pizza are the leading pizzas by revenue.
-- **12 p.m.** is the busiest hour for orders.
-- **Friday, Thursday, and Saturday** are the peak ordering days.
+1. Reviewed the data dictionary and explored the four source tables.
+2. Joined orders, order details, pizzas, and pizza types through SQL.
+3. Calculated core business KPIs such as revenue, total orders, total pizzas sold, average order value, and average pizza price.
+4. Analysed bestsellers, low-performing pizzas, category demand, pizza sizes, ingredient popularity, peak hours, peak days, and monthly performance.
+5. Built an Excel dashboard to present the results in a clear and interactive format.
 
-## SQL analysis
+## Key Findings
 
-The SQL analysis answers business questions related to customer behaviour, revenue, ordering patterns, pizza demand, and product performance.
-
-### Key findings
+### Overall Business Performance
 
 | Metric | Result |
 |---|---:|
-| Total revenue | $817,860.05 |
+| Total revenue | $817.86K |
 | Total orders | 21,350 |
 | Total pizzas sold | 49,574 |
+| Average daily customers | 60 |
+| Average pizzas per order | 2.32 |
 | Average order value | $38.31 |
 | Average pizza price | $16.49 |
 | Pizza varieties | 32 |
-| Highest order month | July |
-| Highest revenue month | July |
-| Most popular pizza size | Large |
-| Highest-demand period | Afternoon |
 
-The analysis also identifies popular ingredients, peak business days, peak order hours, and best-selling pizza varieties.
+### Pizza Performance
+
+The Thai Chicken Pizza is the strongest revenue-generating product, contributing approximately **$43.4K** in sales. The Barbecue Chicken Pizza follows closely with around **$42.8K**, while the California Chicken Pizza completes the top three.
+
+The Brie Carre Pizza is the lowest-performing pizza, generating approximately **$11.6K** in revenue. The Thai Chicken Pizza therefore produces around **274% more revenue** than the Brie Carre Pizza.
+
+This pattern shows that chicken-based pizzas are strong revenue drivers and should receive continued attention in promotions, menu placement, and inventory planning.
+
+### Category and Size Preferences
+
+The **Classic** category is the most popular category, with **14,888 pizzas sold**. It is followed by Supreme, Veggie, and Chicken categories.
+
+Large pizzas are the most popular size, with **18,526 units sold**. Small and medium pizzas also perform well, while XL and XXL pizzas have very low demand. This indicates that customers typically prefer standard-sized pizzas over extra-large options.
+
+### Ingredient Popularity
+
+Garlic is the most popular ingredient, contributing to approximately **$27.4K** in sales. Tomatoes and red onions follow, generating around **$26.6K** and **$19.5K** respectively.
+
+The five most popular ingredients are:
+
+1. Garlic  
+2. Tomatoes  
+3. Red Onions  
+4. Red Peppers  
+5. Mozzarella Cheese  
+
+These ingredients can guide menu development, stock planning, and promotional bundles.
+
+### Peak Hours and Days
+
+The afternoon is the busiest period, with **29,468 pizzas sold**, followed by the evening with **17,356 pizzas sold**. Morning demand is considerably lower.
+
+The busiest hour is **12 PM**, when the restaurant sells **6,776 pizzas**. This indicates a strong lunch-time demand pattern.
+
+Friday is the strongest sales day, with **8,106 pizzas sold**. Thursday and Saturday are also high-demand days. The restaurant should prepare additional staff and inventory for these periods to maintain service speed and product availability.
+
+### Monthly Performance
+
+July is the highest-performing month, generating approximately **$72.6K** in revenue and selling **4,301 pizzas**.
+
+October is the weakest month by revenue, which may reflect seasonal shifts in customer demand. This period represents an opportunity for targeted promotions, limited-time menu items, or themed campaigns.
 
 ## Dashboard
 
-The interactive Excel dashboard presents the main sales KPIs and business insights, including:
+The Excel dashboard summarises the project’s key metrics and findings in one place. It includes KPI cards, bestseller and low-seller comparisons, category and size preferences, ingredient demand, order distribution by time of day, peak-day performance, peak-hour performance, and monthly revenue trends.
 
-- Total revenue
-- Total orders
-- Total pizzas sold
-- Average order value
-- Peak order hours and days
-- Monthly revenue trends
-- Pizza category performance
-- Popular pizza sizes and ingredients
-- Best-selling pizzas
+![Maven Pizza Sales Insight Dashboard](assets/pizza-sales-dashboard.png)
 
-The completed dashboard is available in:
+The completed interactive Excel dashboard is available in:
 
-`Maven Pizza Sales Insight Dashboard.xlsx`
-
-## Presentation
+[`Maven Pizza Sales Insight Dashboard.xlsx`](Maven%20Pizza%20Sales%20Insight%20Dashboard.xlsx)
 
 A summary presentation of the project findings is available in:
 

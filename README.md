@@ -139,11 +139,62 @@ A summary presentation of the project findings is available in:
 
 `Maven_s_Pizza_Sales_Insight.pptx`
 
-## Project status
+## Recommendations
 
-- [x] Project setup
-- [x] Dataset documentation
-- [x] SQL analysis
-- [x] Excel dashboard metrics
-- [x] Interactive dashboard
-- [x] Presentation
+### Promote the strongest non-vegetarian pizzas
+
+The Thai Chicken Pizza and Barbecue Chicken Pizza are the highest-revenue products. The restaurant should feature these pizzas in meal deals, lunch promotions, homepage banners, and seasonal marketing campaigns to maintain demand.
+
+### Review low-performing pizzas
+
+The Brie Carre Pizza is the weakest product by revenue. The restaurant should test a recipe improvement, revised pricing, improved menu placement, or replacement with a new customer-focused pizza option.
+
+### Optimise Friday afternoon operations
+
+Friday is the highest-demand day and 12 PM is the peak hour. Staffing levels, pizza preparation, ingredient availability, and delivery capacity should be increased during this period to improve speed and reduce missed sales opportunities.
+
+### Use seasonal promotions to improve October performance
+
+October is the lowest-revenue month. Halloween-themed pizzas, limited-time menu items, bundled offers, and social-media campaigns could help attract customers during this slower period.
+
+### Increase demand for XL and XXL pizzas
+
+XL and XXL pizzas have limited demand compared with standard sizes. A half-and-half topping option, group meal deals, or family bundles could make larger pizzas more appealing and reduce customer hesitation.
+
+## Repository Structure
+
+```text
+Mavens-Pizza-Sales-Analysis/
+│
+├── Pizza Place Sales Dataset/
+│   ├── data_dictionary.csv
+│   └── pizza_sales/
+│       ├── orders.csv
+│       ├── order_details.csv
+│       ├── pizzas.csv
+│       └── pizza_types.csv
+│
+├── Queries & Insight/
+│   ├── [01] Main Query.sql
+│   ├── [02] Avg customers per day.sql
+│   ├── [03] Pizza per order.sql
+│   └── Additional SQL analysis files
+│
+├── assets/
+│   ├── pizza-sales-banner.png
+│   ├── pizza-er-diagram.png
+│   └── pizza-sales-dashboard.png
+│
+├── Excel Metrics.md
+├── Maven Pizza Sales Insight Dashboard.xlsx
+├── Maven_s_Pizza_Sales_Insight.pptx
+└── README.md
+```
+
+## Project Resources
+
+- [Dataset and data dictionary](Pizza%20Place%20Sales%20Dataset/)
+- [SQL queries and insights](Queries%20%26%20Insight/)
+- [Excel metric calculations](Excel%20Metrics.md)
+- [Interactive Excel dashboard](Maven%20Pizza%20Sales%20Insight%20Dashboard.xlsx)
+- [Project presentation](Maven_s_Pizza_Sales_Insight.pptx)
